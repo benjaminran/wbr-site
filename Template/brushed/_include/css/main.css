@@ -503,10 +503,10 @@ header #logo {
 }
 
 header #logo a {
-	background: url(../img/logo.png) no-repeat;
+    /*background: url(../img/logo.png) no-repeat;*/
 	width: 96px;
 	height: 30px;
-	text-indent: -9999px;
+	/*text-indent: -9999px;*/
 	display: block;
 	opacity: 1;
 	filter: alpha(opacity=100);
@@ -554,6 +554,25 @@ nav#menu #menu-nav li a {
 nav#menu #menu-nav li.current a,
 nav#menu #menu-nav li a:hover {
 	color: #DE5E60;
+}
+
+
+/* ==================================================
+   Banner Section
+================================================== */
+
+#banner {
+    background: url(../img/banner.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: local;
+}
+
+#banner .title {
+    font-size: px;
 }
 
 
@@ -643,11 +662,11 @@ nav#menu #menu-nav li a:hover {
 
 .title-page {
 	text-align: center;
-	margin-bottom: 100px;	
+	margin-bottom: 100px;
 }
 
 .title-page .title {
-	font-size: 64px;
+	font-size: 48px;
 	margin: 0 0 10px 0
 }
 
@@ -656,6 +675,7 @@ nav#menu #menu-nav li a:hover {
 	font-weight: 200;
 	margin: 0;
 }
+
 
 /* ==================================================
    Section Portfolio
