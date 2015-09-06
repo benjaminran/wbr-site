@@ -10,13 +10,13 @@ var gith = require('gith').create( 9001 );
 var execFile = require('child_process').execFile;
 
 gith({
-    repo: 'fideloper/example'
+    repo: 'benjaminran/wbr-site'
 }).on( 'all', function( payload ) {
     console.log("bar");
     if( payload.branch === 'staging' )
     {
         // Exec a shell script
-        execFile('/path/to/hook.sh', function(error, stdout, stderr) {
+        execFile('/home/ubuntu/workspace/wbr-site/util/webhook/hook.sh', function(error, stdout, stderr) {
             // Log success in some manner
             console.log( 'exec complete' );
         });
