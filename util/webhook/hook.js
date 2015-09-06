@@ -9,7 +9,11 @@ var gith = require('gith').create( 9001 );
 // Import execFile, to run our bash script
 var execFile = require('child_process').execFile;
 
-gith({
+gith().on('all', function(payload) {
+    console.log("received webhook: "+payload);
+});
+
+/*gith({
     repo: 'benjaminran/wbr-site'
 }).on( 'all', function( payload ) {
     console.log("bar");
@@ -21,4 +25,4 @@ gith({
             console.log( 'exec complete' );
         });
     }
-});
+});*/
