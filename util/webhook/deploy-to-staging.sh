@@ -7,7 +7,7 @@
 #
 
 # Configuration paramters
-dir=/tmp/wbr-site-temp
+dir=/home/ubuntu/workspace/wbr-site
 
 
 #
