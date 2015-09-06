@@ -28,3 +28,8 @@ crashlytics-build.properties
 
 # OS X
 .DS_Store
+**/*.DS_Store
+
+# Emacs files
+*~
+**/*~
