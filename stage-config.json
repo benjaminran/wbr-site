@@ -1,0 +1,14 @@
+/* Webhook-deployer config file - see https://github.com/camme/webhook-deployer*/
+{
+    "port": 9292,
+    "username": "supercooluser",
+    "password": "with-a-LONG-password",
+    "deploys": [{
+        "name": "Deploy webhook deploy",
+        "type": "github",
+        "repo": "https://github.com/benjaminran/wbr-site",
+        "basepath": "/home/ubuntu/workspace/wbr-site",
+        "command": "git pull",
+        "branch": "staging"
+    }]
+}
