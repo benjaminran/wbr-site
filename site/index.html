@@ -6,77 +6,97 @@
 <!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
 <head>
 
-<!-- Meta Tags -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Meta Tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<title>West Bay Rhythm</title>
+    <title>West Bay Rhythm</title>
 
-<meta name="description" content="Insert Your Site Description" /> 
+    <meta name="description" content="Insert Your Site Description" />
 
-<!-- Mobile Specifics -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="HandheldFriendly" content="true"/>
-<meta name="MobileOptimized" content="320"/>   
+    <!-- Mobile Specifics -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="MobileOptimized" content="320"/>
 
-<!-- Mobile Internet Explorer ClearType Technology -->
-<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+    <!-- Mobile Internet Explorer ClearType Technology -->
+    <!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
 
-<!-- Bootstrap -->
-<link href="_include/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="_include/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Main Style -->
-<link href="_include/css/main.css" rel="stylesheet">
+    <!-- Main Style -->
+    <link href="_include/css/main.css" rel="stylesheet">
 
-<!-- Supersized -->
-<link href="_include/css/supersized.css" rel="stylesheet">
-<link href="_include/css/supersized.shutter.css" rel="stylesheet">
+    <!-- Supersized -->
+    <link href="_include/css/supersized.css" rel="stylesheet">
+    <link href="_include/css/supersized.shutter.css" rel="stylesheet">
 
-<!-- FancyBox -->
-<link href="_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+    <!-- FancyBox -->
+    <link href="_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
 
-<!-- Font Icons -->
-<link href="_include/css/fonts.css" rel="stylesheet">
+    <!-- Font Icons -->
+    <link href="_include/css/fonts.css" rel="stylesheet">
 
-<!-- Shortcodes -->
-<link href="_include/css/shortcodes.css" rel="stylesheet">
+    <!-- Shortcodes -->
+    <link href="_include/css/shortcodes.css" rel="stylesheet">
 
-<!-- Responsive -->
-<link href="_include/css/bootstrap-responsive.min.css" rel="stylesheet">
-<link href="_include/css/responsive.css" rel="stylesheet">
+    <!-- Responsive -->
+    <link href="_include/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="_include/css/responsive.css" rel="stylesheet">
 
-<!-- Supersized -->
-<link href="_include/css/supersized.css" rel="stylesheet">
-<link href="_include/css/supersized.shutter.css" rel="stylesheet">
+    <!-- Supersized -->
+    <link href="_include/css/supersized.css" rel="stylesheet">
+    <link href="_include/css/supersized.shutter.css" rel="stylesheet">
 
-<!-- Google Font -->
-<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
 
-<!-- Fav Icon -->
-<link rel="shortcut icon" href="#">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="#">
 
-<link rel="apple-touch-icon" href="#">
-<link rel="apple-touch-icon" sizes="114x114" href="#">
-<link rel="apple-touch-icon" sizes="72x72" href="#">
-<link rel="apple-touch-icon" sizes="144x144" href="#">
+    <link rel="apple-touch-icon" href="#">
+    <link rel="apple-touch-icon" sizes="114x114" href="#">
+    <link rel="apple-touch-icon" sizes="72x72" href="#">
+    <link rel="apple-touch-icon" sizes="144x144" href="#">
 
-<!-- Modernizr -->
-<script src="_include/js/modernizr.js"></script>
+    <!-- Modernizr -->
+    <script src="_include/js/modernizr.js"></script>
 
-<!-- Analytics -->
-<script type="text/javascript">
+    <!-- required -->
+    <link rel="stylesheet" type="text/css" href="_include/sm2/360player.css" />
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'Insert Your Code']);
-  _gaq.push(['_trackPageview']);
+    <!-- special IE-only canvas fix -->
+    <!--[if IE]><script type="text/javascript" src="_include/sm2/excanvas.js"></script><![endif]-->
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    <!-- Apache-licensed animation library -->
+    <script type="text/javascript" src="script/berniecode-animator.js"></script>
 
-</script>
-<!-- End Analytics -->
+    <!-- the core stuff -->
+    <script type="text/javascript" src="_include/sm2/soundmanager2.js"></script>
+    <script type="text/javascript" src="_include/sm2/360player.js"></script>
+
+    <script type="text/javascript">
+        soundManager.setup({
+            // path to directory containing SM2 SWF
+            url: '_include/sm2/'
+        });
+    </script>
+
+    <!-- Analytics -->
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'Insert Your Code']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    <!-- End Analytics -->
 
 </head>
 
@@ -85,9 +105,9 @@
 
 <!-- This section is for Splash Screen --> <!--TODO: remove splash screen code-->
 <div class="ole">
-<section id="jSplash">
-	<div id="circle"></div>
-</section>
+    <section id="jSplash">
+        <div id="circle"></div>
+    </section>
 </div>
 <!-- End of Splash Screen -->
 
@@ -112,15 +132,15 @@
 <!-- Header -->
 <header>
     <div class="sticky-nav">
-    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
-        
+        <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+
         <div id="logo">
-        	<a id="goUp" href="#banner" title="West Bay Rhythm Home">WBR</a> <!-- TODO:update and re-enable img/logo.png -->
+            <a id="goUp" href="#banner" title="West Bay Rhythm Home">WBR</a> <!-- TODO:update and re-enable img/logo.png -->
         </div>
-        
+
         <nav id="menu">
-        	<ul id="menu-nav">
-            	<li class="current"><a href="#banner">Home</a></li>
+            <ul id="menu-nav">
+                <li class="current"><a href="#banner">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#concerts">Upcoming Events</a></li>
@@ -129,7 +149,7 @@
 				<li><a href="shortcodes.html" class="external">Shortcodes</a></li>--> <!-- TODO: Does testimonials or social deserve a menu listing? -->
             </ul>
         </nav>
-        
+
     </div>
 </header>
 <!-- End Header -->
@@ -179,8 +199,8 @@
 
 <!-- Gallery Section -->
 <div id="gallery" class="page">
-	<div class="container">
-    	<!-- Title Page -->
+    <div class="container">
+        <!-- Title Page -->
         <div class="row">
             <div class="span12">
                 <div class="title-page">
@@ -190,14 +210,14 @@
             </div>
         </div>
         <!-- End Title Page -->
-        
+
         <!-- Portfolio Projects -->
         <div class="row">
-        	<div class="span3">
-            	<!-- Filter -->
+            <div class="span3">
+                <!-- Filter -->
                 <nav id="options" class="work-nav">
                     <ul id="filters" class="option-set" data-option-key="filter">
-                    	<li class="type-work">Content Type</li>
+                        <li class="type-work">Content Type</li>
                         <li><a href="#filter" data-option-value="*" class="selected">All Content</a></li>
                         <li><a href="#filter" data-option-value=".picture">Pictures</a></li>
                         <li><a href="#filter" data-option-value=".video">Video</a></li>
@@ -207,11 +227,11 @@
                 </nav>
                 <!-- End Filter -->
             </div>
-            
+
             <div class="span9">
-            	<div class="row">
-                	<section id="projects">
-                    	<ul id="thumbs">
+                <div class="row">
+                    <section id="projects">
+                        <ul id="thumbs">
 
                             <!-- Item Project and Filter Name -->
                             <li class="item-thumbs span3 video">
@@ -297,17 +317,17 @@
                             </li>
                             <!-- End Item Project -->
 
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 video">
-                            	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                            	<a class="hover-wrap fancybox-media" data-fancybox-group="video" title="TEMP: Video Content" href="https://www.youtube.com/watch?v=ZsqrWKpOm74">
-                                	<span class="overlay-img"></span>
+                            <!-- Item Project and Filter Name -->
+                            <li class="item-thumbs span3 video">
+                                <!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
+                                <a class="hover-wrap fancybox-media" data-fancybox-group="video" title="TEMP: Video Content" href="https://www.youtube.com/watch?v=ZsqrWKpOm74">
+                                    <span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="_include/img/gallery/thumbs/smcf2014-thumb.jpg" alt="Video"> <!-- TODO: correct this thumb -->
                             </li>
-                        	<!-- End Item Project -->
+                            <!-- End Item Project -->
 
                             <!-- Item Project and Filter Name -->
                             <li class="item-thumbs span3 picture">
@@ -352,8 +372,8 @@
                             <!-- End Item Project -->
                         </ul>
                     </section>
-                    
-            	</div>
+
+                </div>
             </div>
         </div>
         <!-- End Portfolio Projects -->
@@ -482,62 +502,62 @@
 
 <!-- Contact Section -->
 <div id="contact" class="page">
-<div class="container">
-    <!-- Title Page -->
-    <div class="row">
-        <div class="span12">
-            <div class="title-page">
-                <h2 class="title">Contact Us</h2>
-                <!--<h3 class="title-description">We’re currently accepting new client projects. We look forward to serving you.</h3>-->
-            </div>
-        </div>
-    </div>
-    <!-- End Title Page -->
-    
-    <!-- Contact Form -->
-    <div class="row">
-    	<div class="span9">
-        
-        	<form id="contact-form" class="contact-form" action="#">
-            	<p class="contact-name">
-            		<input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
-                </p>
-                <p class="contact-email">
-                	<input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
-                </p>
-                <p class="contact-message">
-                	<textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
-                </p>
-                <p class="contact-submit">
-                	<a id="contact-submit" class="submit" href="#">Send Your Email</a>
-                </p>
-                
-                <div id="response">
-                
+    <div class="container">
+        <!-- Title Page -->
+        <div class="row">
+            <div class="span12">
+                <div class="title-page">
+                    <h2 class="title">Contact Us</h2>
+                    <!--<h3 class="title-description">We’re currently accepting new client projects. We look forward to serving you.</h3>-->
                 </div>
-            </form>
-         
-        </div>
-        
-        <div class="span3">
-        	<div class="contact-details">
-        		<h3>Contact Details</h3>
-                <ul>
-                    <li><a href="#">contact@gmail.com</a></li>
-                    <li>(916) 375-2525</li>
-                    <li>
-                        West Bay Rhythm
-                        <br>
-                        5240 Fake Street
-                        <br>
-                        Hayward, CA
-                    </li>
-                </ul>
             </div>
         </div>
+        <!-- End Title Page -->
+
+        <!-- Contact Form -->
+        <div class="row">
+            <div class="span9">
+
+                <form id="contact-form" class="contact-form" action="#">
+                    <p class="contact-name">
+                        <input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
+                    </p>
+                    <p class="contact-email">
+                        <input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
+                    </p>
+                    <p class="contact-message">
+                        <textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
+                    </p>
+                    <p class="contact-submit">
+                        <a id="contact-submit" class="submit" href="#">Send Your Email</a>
+                    </p>
+
+                    <div id="response">
+
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="span3">
+                <div class="contact-details">
+                    <h3>Contact Details</h3>
+                    <ul>
+                        <li><a href="#">contact@gmail.com</a></li>
+                        <li>(916) 375-2525</li>
+                        <li>
+                            West Bay Rhythm
+                            <br>
+                            5240 Fake Street
+                            <br>
+                            Hayward, CA
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Contact Form -->
     </div>
-    <!-- End Contact Form -->
-</div>
 </div>
 <!-- End Contact Section -->
 
@@ -586,8 +606,8 @@
 
 <!-- Socialize -->
 <div id="social-area" class="page">
-	<div class="container">
-    	<div class="row">
+    <div class="container">
+        <div class="row">
             <div class="span12">
                 <nav id="social">
                     <ul>
@@ -610,13 +630,13 @@
 
 <!-- Footer -->
 <footer>
-	<p class="credits">&copy;2015 Benjamin Ran</p>
+    <p class="credits">&copy;2015 Benjamin Ran</p>
 </footer>
 <!-- End Footer -->
 
 <!-- Back To Top -->
 <a id="back-to-top" href="#">
-	<i class="font-icon-arrow-simple-up"></i>
+    <i class="font-icon-arrow-simple-up"></i>
 </a>
 <!-- End Back to Top -->
 
