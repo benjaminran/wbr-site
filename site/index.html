@@ -323,14 +323,10 @@
 
                             <!-- Item Project and Filter Name -->
                             <li class="item-thumbs span3 audio">
-                                <audio src="_include/audio/souled-out.m4a" preload="auto" controls></audio>
-                                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                <!--<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Song 1" href="">
-                                    <span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>-->
-                                <!-- Thumb Image and Description -->
-                                <!--<img src="_include/img/gallery/thumbs/audio-icon.png" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">-->
+                                <div class="ui360">
+                                    <a href="_include/audio/souled-out.m4a">"God Bless The Child" by West Bay Rhythm</a>
+                                </div>
+                                <img src="_include/img/gallery/thumbs/audio-icon.png" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
                             </li>
                             <!-- End Item Project -->
 
@@ -348,12 +344,9 @@
 
                             <!-- Item Project and Filter Name -->
                             <li class="item-thumbs span3 audio">
-                                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Song 2" href="_include/audio/god-bless-the-child.m4a">
-                                    <span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
+                                <div class="ui360">
+                                    <a href="_include/audio/god-bless-the-child.m4a">"God Bless The Child" by West Bay Rhythm</a>
+                                </div>
                                 <img src="_include/img/gallery/thumbs/audio-icon.png" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
                             </li>
                             <!-- End Item Project -->
@@ -641,6 +634,23 @@
 <script src="_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
 <script src="_include/js/main.js"></script> <!-- Default JS -->
 <!-- End Js -->
+
+<script src="_include/sm2/soundmanager2.js"></script>
+<script>
+    soundManager.setup({
+        url: '_include/sm2/',
+        onready: function() {
+            var mySound = soundManager.createSound({
+                id: 'aSound',
+                url: '_include/audio/souled-out.m4a'
+            });
+            mySound.play();
+        },
+        ontimeout: function() {
+            console.log("SoundManager2 could not start.");
+        }
+    });
+</script>
 
 </body>
 </html>
